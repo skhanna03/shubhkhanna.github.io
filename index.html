@@ -1,506 +1,95 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Shubh Khanna">
+<title>Shubh Khanna</title>
+<style>
+  body { max-width: 640px; margin: 40px auto; padding: 0 16px; line-height: 1.4; }
+  img { max-width: 100%; height: auto; }
+  ul { padding-left: 1.25em; }
+  li { margin-bottom: 0.3em; }
+  .photos { display: flex; align-items: flex-start; gap: 12px; }
+  .photos img { min-width: 0; }
+  .photos .headshot { flex: 75 1 0; }
+  .photos .boba { flex: 133.33 1 0; }
+  .photos .kid { flex: 126.18 1 0; }
+  .paper { display: flex; align-items: center; gap: 20px; margin: 0 0 1.25em; }
+  .paper .thumb { flex: 0 0 160px; display: flex; justify-content: center; }
+  .paper .thumb img { width: auto; height: auto; max-width: 100%; max-height: 120px; }
+  .paper .thumb img.logo { width: 120px; }
+  .paper p { margin: 0; }
+  @media (max-width: 520px) {
+    .photos { gap: 6px; }
+    .paper { gap: 12px; }
+    .paper .thumb { flex-basis: 96px; }
+    .paper .thumb img { max-height: 80px; }
+  }
+</style>
+</head>
+<body>
 
-    <title >Shubh Khanna</title>
+<h1>Shubh Khanna</h1>
+<div class="photos">
+<img class="kid" src="images/shubh-kid.jpg" width="800" height="634" alt="Shubh as a kid using an old desktop computer">
+<img class="headshot" src="images/shubh-headshot.jpg" width="600" height="800" alt="Shubh Khanna wearing an EEG electrode net">
+<img class="boba" src="images/shubh-boba.jpg" width="800" height="600" alt="Shubh Khanna with a homemade boba vending machine">
+</div>
 
-    <meta name="author" content="Shubh Khanna">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon"> -->
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <style>
-      body {
-        line-height: 1.6;
-      }
-      p {
-        color: black
-      }
-      a {
-    text-decoration: underline;
-    color: black;
-}
-          .name {
-            text-align: center; 
-            color: darkslategrey;
-            position: relative; /* Positioning context for the line */
-        }
+<h2>Contact</h2>
+<p>
+Email: <a href="mailto:shubh@cs.stanford.edu">shubh@cs.stanford.edu</a><br>
+<a href="https://twitter.com/shubhkhanna__">Twitter</a><br>
+<a href="https://www.linkedin.com/in/shubh-khanna">LinkedIn</a><br>
+<a href="https://scholar.google.com/citations?user=HsShv4sAAAAJ&amp;hl=en">Google Scholar</a>
+</p>
 
-        /* .name-line {
-            height: 4px;
-            background-color: darkslategrey; 
-            width: 50%; 
-            position: relative; 
-            left: 50%; 
-            transform: translateX(-50%); 
-            bottom: -5px; 
-        } */
-  </style>
-  </head>
+<h2>About</h2>
+<p>I work on scaling energy infrastructure in the United States.</p>
+<p>In my past life, I trained and worked on inference optimization of generative AI models. I did this at Meta Superintelligence Labs (FAIR), the Stanford Artificial Intelligence Laboratory (SAIL), and Pika Labs. It taught me that scaling infrastructure is important, and motivated me to become an energy nerd.</p>
+<p>I love working on impactful projects. In the past, I’ve:</p>
+<ul>
+<li>Developed a <a href="https://arxiv.org/abs/2401.18059">SOTA retrieval</a> system (ICLR 2024) with the Stanford NLP Group, used by several groups in industry</li>
+<li>Used pupil-tracking to build the most robust method for diagnosing neurobehavioral conditions (published in <a href="https://www.nature.com/articles/s41598-021-95673-5">Nature Scientific Reports</a>)</li>
+<li>Made editing NeRFs go brrrr (2x speedup)</li>
+<li>Collected brain data on myself and trained models to recreate the images I was thinking</li>
+</ul>
 
-  <body>
-    <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center; color:darkslategrey">
-                  <b>Shubh Khanna</b>
-                  <div class="name-line"></div>
-                </p>
-                <p style="text-align:center">
-                  <a href="mailto:shubhrkhanna@alumni.stanford.edu">Email</a> &nbsp;/&nbsp;
-                  <a href="https://twitter.com/shubhkhanna__">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/shubh-khanna">Linkedin</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?user=HsShv4sAAAAJ&hl=en">Scholar</a> &nbsp;
-				  
-                </p>
-                <p>I'm a <b>graduating M.S./B.S. student at Stanford </b> studying computer science and math. Most of my prior work is in real-time visual decoding and in generative diffusion models. 
-                  
-                </p>
-                <p>
-                  I'm on a 6-month term with <b> FAIR (Facebook AI Research) </b>, and have in the past done <b>diffusion research at Pika </b>. At Stanford, I work with the <b>Vision and Learning Lab (Fei-Fei Li, Ehsan Adeli) </b>, as part of <a href="https://ai.stanford.edu/" target="_blank">Stanford Artificial Intelligence Laboratory (SAIL)</a>.
-                </p>
-		</p>
-                <p>Previously, I've built <a href="https://www.oculardiagnostix.com/">Ocular Diagnostics</a>, a VC-backed brain health startup. We used eye movements to monitor the onset of neurobehavioral disorders.</p>
-                
-                <p>In the past, I've:
-                  <ul>
-                    <li>Developed a <a href="https://arxiv.org/abs/2401.18059">SOTA retrieval</a>  system (ICLR 2024) with the Stanford NLP Group</li>                    
-                    <li>Used pupil-tracking to build the most robust method for diagnosing neurobehavioral conditions (raised from <a href="https://somacap.com/" target="_blank">Soma</a>, published in <a href="https://www.nature.com/articles/s41598-021-95673-5" target="_blank">Nature Scientific Reports</a>)</li>
-                    <li>Made editing NeRFs go brrrr (2x speedup)</li>
-                    <li>Built first encoder-decoder architecture to generate text from MEG (neural data)</li>
-                  </ul>
-                </p>
+<h2>Papers</h2>
 
-                <p>Some of my most fun side projects: 
-                  <ul>
-                    <li>Made a boba vending machine over a weekend and sold across Stanford (pictured above)</li>
-                    <li>Wrote Bayesian filtering algorithms, learned surgery, implanted sub-cortical devices into rodents (!), and decoded signals with these algorithms at <a>Science</a></li>
-                    <li>Built a <a href="https://devpost.com/software/brainhack-vopeuy">wearable</a> that uses brain signals to steer a wheelchair</li>
-                    <li>Finetuned Mistral to make a personal email agent — <a href="mailto:shubhrkhanna@alumni.stanford.edu">email me</a> to see :)</li>
-                    <li>Built tech for catching sex <a href="https://www.seattleagainstslavery.org/">trafficking</a>, building cheaper ventilators, and the <a href="http://nycconnector.org/">NYC volunteering hub</a> while running <a href="http://codingforimpact.org/">Coding for Impact</a></li>
-                  </ul>
-                </p>
-                
-                
-              </td>
-              <td style="padding:2.5%;width:70%;max-width:70%">
-                <a href="images/shubh-website-pic.jpeg"><img style="width:100%;max-width:100%;object-fit: cover;" alt="profile photo" src="images/shubh-website-pic.jpeg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Publications</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<tr onmouseout="neuralset_stop()" onmouseover="neuralset_start()">
-  <td style="padding:20px;width:25%;vertical-align:middle">
-    <div class="one">
-      <img src="images/neuralset.png" width="160">
-    </div>
-    <script type="text/javascript">
-      function neuralset_start() {
-        document.getElementById('neuralset_image').style.opacity = "1";
-      }
-      function neuralset_stop() {
-        document.getElementById('neuralset_image').style.opacity = "0";
-      }
-      neuralset_stop()
-    </script>
-  </td>
-  <td style="padding:20px;width:75%;vertical-align:middle">
-    <a href="https://arxiv.org/abs/2605.03169">
-      <span class="papertitle">NeuralSet: A High-Performing Python Package for Neuro-AI</span>
-    </a>
-    <br>
-    Jean-Rémi King, Corentin Bel, Linnea Evanson, Julien Gadonneix, Sophia Houhamdi, Jarod Lévy, Josephine Raugel, Andrea Santos Revilla, Mingfang (Lucy) Zhang, Julie Bonnaire, Charlotte Caucheteux, Alexandre Défossez, Théo Desbordes, Pablo Diego-Simón, Shubh Khanna, Juliette Millet, Pierre Orhan, Saarang Panchavati, Antoine Ratouchniak, Alexis Thual, Teon L. Brooks, Katelyn Begany, Yohann Benchetrit, Marlène Careil, Hubert Banville, Stéphane d'Ascoli, Simon Dahan, Jérémy Rapin
-    <br>
-    <em>arXiv preprint</em>, 2026
-    <br></p>
-    <p>
-      A unified Python framework that turns diverse neural recordings (fMRI, M/EEG, spikes) and naturalistic stimuli into PyTorch-ready datasets, scaling from local prototyping to high-performance clusters.
-    </p>
-  </td>
-</tr>
+<div class="paper">
+<div class="thumb"><img class="logo" src="images/meta-logo.png" alt="" width="500" height="333"></div>
+<p><a href="https://ai.meta.com/research/publications/neuralset-a-high-performing-python-package-for-neuro-ai/">NeuralSet: A High-Performing Python Package for Neuro-AI</a><br>
+<i>Meta Superintelligence Labs (FAIR)</i>, 2026</p>
+</div>
 
-<tr onmouseout="camp_stop()" onmouseover="camp_start()">
-  <td style="padding:20px;width:25%;vertical-align:middle">
-    <div class="one">
-      <!-- <div class="two" id='camp_image'><video  width=100% height=100% muted autoplay loop>
-      <source src="images/camp.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video></div> -->
-      <img src="images/ikea-cover.png" width="160">
-    </div>
-    <script type="text/javascript">
-      function camp_start() {
-        document.getElementById('camp_image').style.opacity = "1";
-      }
-      function camp_stop() {
-        document.getElementById('camp_image').style.opacity = "0";
-      }
-      camp_stop()
-    </script>
-  </td>
-  <td style="padding:20px;width:75%;vertical-align:middle">
-    <a href="https://arxiv.org/abs/2411.11409">
-      <span class="papertitle">IKEA Manuals at Work: 4D Grounding of Assembly Instructions on Internet Videos</span>
-    </a>
-    <br>
-    Yunong Liu, Cristobal Eyzaguirre, Manling Li, Shubh Khanna, Juan Carlos Niebles, Vineeth Ravi, Saumitra Mishra, Weiyu Liu, Jiajun Wu
-    <br>
-    <em>NeurIPS Datasets and Benchmarks, 2024</em>
-    <br></p>
-    <p>
-      We introduced IKEA Video Manuals, a dataset that features 3D models of furniture parts, instructional manuals, assembly videos from the Internet, and annotations of dense spatio‑temporal alignments between these data modalities.
-    </p>
-  </td>
-</tr>
+<div class="paper">
+<div class="thumb"><img src="images/ikea-cover-thumb.png" alt="" width="320" height="182"></div>
+<p><a href="https://arxiv.org/abs/2411.11409">IKEA Manuals at Work: 4D Grounding of Assembly Instructions on Internet Videos</a><br>
+<i>NeurIPS Datasets and Benchmarks</i>, 2024</p>
+</div>
 
-<tr onmouseout="difsurvey_stop()" onmouseover="difsurvey_start()">
-  <td style="padding:20px;width:25%;vertical-align:middle">
-    <div class="one">
-    <!-- <div class="two" id='difsurvey_image'><video  width=100% height=100% muted autoplay loop>
-    <source src="retri" type="video/mp4">
-    Your browser does not support the video tag.
-    </video></div> -->
-      <img src='images/retrieval.png' width="160">
-    </div>
-    <script type="text/javascript">
-      function difsurvey_start() {
-        document.getElementById('difsurvey_image').style.opacity = "1";
-      }
+<div class="paper">
+<div class="thumb"><img src="images/retrieval.png" alt="" width="446" height="375"></div>
+<p><a href="https://arxiv.org/abs/2401.18059">RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval</a><br>
+<i>International Conference on Learning Representations (ICLR)</i>, 2024</p>
+</div>
 
-      function difsurvey_stop() {
-        document.getElementById('difsurvey_image').style.opacity = "0";
-      }
-      difsurvey_stop()
-    </script>
-  </td>
-  <td style="padding:20px;width:75%;vertical-align:middle">
-    <a href="https://scholar.google.com/scholar_lookup?arxiv_id=2401.18059">
-      <span class="papertitle">RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval 
-</span>
-    </a>
-    <br>
-    Parth Sarthi, Salman Abdullah, Aditi Tuli, Shubh Khanna, Anna Goldie, Christopher Manning
-	
-   
-    <br>
-	<em>International Conference on Learning Representations (ICLR)</em>, 2024
-    <br>
-    <p></p>
-    <p>
-    SOTA performance on retrieval for language models. 
-    </p>
-  </td>
-</tr>          
+<div class="paper">
+<div class="thumb"><img src="images/wave-mechanics.gif" alt="" width="100" height="100"></div>
+<p><a href="https://www.nature.com/articles/s41598-021-95673-5">A Robust Machine Learning Based Framework for the Automated Detection of ADHD Using Pupillometric Biomarkers and Time Series Analysis</a><br>
+<i>Nature Scientific Reports</i>, 2021</p>
+</div>
 
-    <tr onmouseout="camp_stop()" onmouseover="camp_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <!-- <div class="two" id='camp_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/camp.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div> -->
-          <img src='images/wave-mechanics.gif' width="160">
-        </div>
-        <script type="text/javascript">
-          function camp_start() {
-            document.getElementById('camp_image').style.opacity = "1";
-          }
+<h2>Projects</h2>
+<ul>
+<li>Worked on the inference stack and optimizations for <a href="https://www.youtube.com/watch?v=gRef4VY_lxY">Pika 1.5</a></li>
+<li>Made a boba vending machine over a weekend and sold across Stanford</li>
+<li>Learned surgery, implanted sub-cortical devices into rodents (!), and trained models to decode those signals at <a href="https://science.xyz/">Science</a></li>
+<li>Built a <a href="https://devpost.com/software/brainhack-vopeuy">wearable</a> that uses brain signals to steer a wheelchair</li>
+<li>Built tech for catching sex <a href="https://www.seattleagainstslavery.org/">trafficking</a>, building cheaper ventilators, and the <a href="http://nycconnector.org/">NYC volunteering hub</a> while running <a href="http://codingforimpact.org/">Coding for Impact</a></li>
+</ul>
 
-          function camp_stop() {
-            document.getElementById('camp_image').style.opacity = "0";
-          }
-          camp_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://www.nature.com/articles/s41598-021-95673-5">
-          <span class="papertitle">A Robust Machine Learning Based Framework for the Automated Detection of ADHD Using Pupillometric Biomarkers and Time Series Analysis</span>
-        </a>
-        <br>
-        William Das, Shubh Khanna (equal contribution)
-        <br>
-        <em>Nature Scientific Reports</em>, 2021
-        <br></p>
-        <p>
-        Illustrated features most pertinent to ADHD, built Naive Bayes classifier. 
-        </p>
-      </td>
-    </tr>
-
-    
-      <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  >
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <!-- <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/zipnerf.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div> -->
-            <img src='images/adhd.jpeg' width="160">
-          </div>
-          <script type="text/javascript">
-            function zipnerf_start() {
-              document.getElementById('zipnerf_image').style.opacity = "1";
-            }
-
-            function zipnerf_stop() {
-              document.getElementById('zipnerf_image').style.opacity = "0";
-            }
-            zipnerf_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9311012">
-            <span class="papertitle">A Novel Application for the Efficient and
-              Accessible Diagnosis of ADHD Using Machine
-              Learning</span>
-          </a>
-          <br>
-          William Das, Shubh Khanna (equal contribution)
-          <br>
-          <em>IEEE/ITU International Conference on Artificial Intelligence</em>, 2020 &nbsp 
-          <br>
-          <p></p>
-          <p>
-          Real-time filtering algorithms and hough methods for pupil extraction.
-          </p>
-        </td>
-      </tr>
-      
-      
-      <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <!-- <div class="two" id='db3d_image'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/owl.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div> -->
-            <img src='images/eye-testing.jpeg' width="160" height="160">
-          </div>
-          <script type="text/javascript">
-            function db3d_start() {
-              document.getElementById('db3d_image').style.opacity = "1";
-            }
-
-            function db3d_stop() {
-              document.getElementById('db3d_image').style.opacity = "0";
-            }
-            db3d_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://dl.acm.org/doi/pdf/10.1145/3388440.3412427">
-            <span class="papertitle">A Novel Pupillometric-Based Application for the Automated Detection of ADHD Using Machine Learning</span>
-          </a>
-          <br>
-          
-          William Das, Shubh Khanna (equal contribution)
-          <br>
-          <em>ACM International Conference on Bioinformatics, Computational Biology, and Health Informatics</em>, 2020
-          <br>
-          <p></p>
-          <p>ML pipelines to work with continuous time series data, segmenting eye features to diagnose ADHD.</p>
-        </td>
-      </tr>
- 
-
-            
-
-          </tbody></table> <br><br>
-
-          
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
-            <!-- <tr>
-              <td>
-                <h2>Cool Projects</h2>
-              </td>
-            </tr> -->
-          </tbody></table>
-          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
-            
-            <!-- <tr onmouseout="camp_stop()" onmouseover="camp_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                   <div class="two" id='camp_image'><video  width=100% height=100% muted autoplay loop>
-                  <source src="images/camp.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video></div> 
-                  <img src='images/shubh-brainstorm-webpic.jpeg' width="160" height="160">
-                </div>
-                <script type="text/javascript">
-                  function camp_start() {
-                    document.getElementById('camp_image').style.opacity = "1";
-                  }
-        
-                  function camp_stop() {
-                    document.getElementById('camp_image').style.opacity = "0";
-                  }
-                  camp_stop()
-                </script>
-              </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://devpost.com/software/brainhack-vopeuy">
-                  <span class="papertitle">Brainstorm: Wearable EEG-tracking For Motor Movement</span>
-                </a>
-                <br>
-                <em>Treehacks Hardware Winner</em>, 2022
-                <br>
-                <a href="https://devpost.com/software/brainhack-vopeuy">project page</a>
-                /
-                <a href="https://github.com/spitzfire/brainstorm">GitHub</a>
-                <p></p>
-                <p>
-                ML methods that decode 2-bit intent to drive a vehicle with 4 channel electrodes. Treehacks Hardware Winner, 2022. 
-                </p>
-              </td>
-            </tr>
-        
-            
-              <tr  onmouseover="zipnerf_start()"  >
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    
-                     <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
-                     <source src="images/IMG_8262.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                    </video></div>  
-                    <img src='images/shubh-website-pic.jpeg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function zipnerf_start() {
-                      document.getElementById('zipnerf_image').style.opacity = "1";
-                    }
-        
-                    function zipnerf_stop() {
-                      document.getElementById('zipnerf_image').style.opacity = "0";
-                    }
-                    
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9311012">
-                    <span class="papertitle">Boba Dispense: Stanford's Boba Machine</span>
-                  </a>
-                  <br>
-                  <p></p>
-                  <p>
-                    Made a vending machine for bubble tea from scratch. Built GUI to customize orders, built hardware infrastructure—servo motors, pumps, thermoelectric peltier chips, and software in C with RPi. 
-                  </p>
-                </td>
-
-
-                <tr onmouseout="camp_stop()" onmouseover="camp_start()">
-                  <td style="padding:20px;width:25%;vertical-align:middle">
-                    <div class="one">
-                       <div class="two" id='camp_image'><video  width=100% height=100% muted autoplay loop>
-                      <source src="images/camp.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                      </video></div> 
-                      <img src='images/parkinsons_cover.png' width="160">
-                    </div>
-                    <script type="text/javascript">
-                      function camp_start() {
-                        document.getElementById('camp_image').style.opacity = "1";
-                      }
-            
-                      function camp_stop() {
-                        document.getElementById('camp_image').style.opacity = "0";
-                      }
-                      camp_stop()
-                    </script>
-                  </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                    <a href="https://github.com/wdas03/Parkinsons-Machine-Learning-Project">
-                      <span class="papertitle">KeyML</span>
-                    </a>
-                    <br>
-                    <p></p>
-                    <p>
-                      Continuous Bayesian ML methods for Parkinson's detection from typing characteristics. Detected unilateral assymetry.
-                    </p>
-                  </td>
-                </tr>
-            
-                
-                  <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  >
-                    <td style="padding:20px;width:25%;vertical-align:middle">
-                      <div class="one">
-                         <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
-                         <source src="images/zipnerf.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                        </video></div> 
-                        <img src='images/adhd.jpeg' width="160">
-                      </div>
-                      <script type="text/javascript">
-                        function zipnerf_start() {
-                          document.getElementById('zipnerf_image').style.opacity = "1";
-                        }
-            
-                        function zipnerf_stop() {
-                          document.getElementById('zipnerf_image').style.opacity = "0";
-                        }
-                        zipnerf_stop()
-                      </script>
-                    </td>
-                    <td style="padding:20px;width:75%;vertical-align:middle">
-                      <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9311012">
-                        <span class="papertitle">Email Generator</span>
-                      </a>
-                      <br>
-                      <p></p>
-                      <p>
-                        Finetuned Mistral's 7B model to write emails just like me. It asks me a few questions, I respond, and it sends the email. If you email me, you may get an LLM-derived email back :)
-
-                      </p>
-                    </td>
-                  </tr> -->
-
-                  
-            
-
-            <tr>
-              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                <h2>Readings That <br> Inspire Me</h2>
-              </td>
-              <td width="75%" valign="middle">
-                <a href="https://maxhodak.com/nonfiction/2020/10/10/the-vanishing-computer">Max Hodak: The Vanishing Computer</a>
-                <br>
-                <a href="https://ai.meta.com/blog/brain-ai-image-decoding-meg-magnetoencephalography/">Meta AI: Reconstructing Vision from MEG</a>
-                <br>
-                <a href="https://milan.cvitkovic.net/writing/neurotechnology_is_critical_for_ai_alignment/">Milan Cvitkovic: Neurotechnology is Critical for AI Alignment</a>
-                </td>
-            </tr>
-
-           
-            
-            
-          </tbody></table>
-          <div>
-            <br><br><br>
-            <h2 align="center">Shoot me an <a href="mailto:shubhrkhanna@alumni.stanford.edu">email</a>, let's chat. </h2>
-         
-          </div>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:right;font-size:small;">
-                  © Shubh Khanna, 2026.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
+</body>
 </html>
